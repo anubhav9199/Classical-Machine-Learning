@@ -1,10 +1,7 @@
 #======================================================================
 # Polynomial Linear Regression from SKLearn on Breast Cancer Data
 """
-Linear regression is a algorithm which is starting level algorithm for machine learning prediction. This code contains only about 
-how we can fit a linear model over user given dataset and also to get a good output result out of it. The code is fully library base so 
-that to keep in mind about the use of the functions of library in other programs also. It also demponstrate all the graph that how a 
-polynomial regression works. The Differnce between Simple, Multiple and Polynomial Linear Regression is: :-
+Linear regression is a algorithm which is starting level algorithm for machine learning prediction. This code contains only about how we can fit a linear model over user given dataset and also to get a good output result out of it. The code is fully library base so that to keep in mind about the use of the functions of library in other programs also. It also demponstrate all the graph that how a polynomial regression works. The Differnce between Simple, Multiple and Polynomial Linear Regression is: :-
 
 Simple LR works over single Feature with single degree only.
 Multiple LR works over multiple Feature with Single degree only.
@@ -26,14 +23,12 @@ from sklearn.model_selection import train_test_split,learning_curve
 #======================================================================
 #Calling Data
 """
-Data is call for work. The Columns are selected here is according to the BREAST CANCER DATASET from WINCONSIN Hospital Easily find 
-on Kaggle(www.kaggle.com).
+Data is call for work. The Columns are selected here is according to the BREAST CANCER DATASET from WINCONSIN Hospital Easily find on Kaggle(www.kaggle.com).
 """
 data=pd.read_csv('Breast_Cancer_Data.csv')
 
 """
-Removing unnecessary columns from the dataset so that you won't face any trouble regarding the dataset. I use Breast Cancer 
-Dataset to train model and predict whether the person is having cancer or not.
+Removing unnecessary columns from the dataset so that you won't face any trouble regarding the dataset. I use Breast Cancer Dataset to train model and predict whether the person is having cancer or not.
 """
 data.drop([data.columns[0],data.columns[32]],axis=1,inplace=True)
 data['diagnosis'].replace(to_replace=['B','M'],value=[0,1],inplace=True)
@@ -42,8 +37,7 @@ data['diagnosis'].replace(to_replace=['B','M'],value=[0,1],inplace=True)
 #======================================================================
 #Polynomial Data Creation and Train Test Split Function
 """
-Polynomial Data Creation and Train Test Split Function is made to create polynomial data of a selected feature of the dataset. 
-The function is also split the dataset into train and test data for fitting of the model.
+Polynomial Data Creation and Train Test Split Function is made to create polynomial data of a selected feature of the dataset. The function is also split the dataset into train and test data for fitting of the model.
 """
 #If you want to create single polynomial you can use the below code or use the function.
 #polyreg = PolynomialFeatures(degree=2)<br>
@@ -148,8 +142,7 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
 #======================================================================
 #Ploting the graph of Linear Regression
 """
-Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line 
-represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
+Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
 """
 def plotter(x_data,y_data,x_test,x_poly,color,linreg,label):
     plt.scatter(x_data,y_data,color='red')
@@ -164,8 +157,7 @@ def main():
     #======================================================================
     #Preparing of data
     """
-    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training 
-    of linear model
+    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training of linear model
     """
     x=data.iloc[:,1:2]
     y=data.iloc[:,0:1]
@@ -174,8 +166,7 @@ def main():
     #======================================================================
     #Preparing of Polynomial data (Degree = 1)
     """
-    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training 
-    of linear model.
+    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training of linear model.
     """
     x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.3)
     #======================================================================
@@ -183,8 +174,7 @@ def main():
     #======================================================================
     #Preparing of Polynomial data (Degree = 2)
     """
-    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training 
-    of linear model.here previously we have single degree data but now in this segment we increase degree to 2
+    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training of linear model.here previously we have single degree data but now in this segment we increase degree to 2
     """
     xpoly,xpoly_train,xpoly_test,ypoly_train,ypoly_test = polynomial_data_creation_and_train_test_split(x,y,degree=2,test_size=0.3)
     #======================================================================
@@ -192,8 +182,7 @@ def main():
     #======================================================================
     ### Preparing of Polynomial data (Degree = 3)
     """
-    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training 
-    of linear model.here previously we have single degree data but now in this segment we increase degree to 3
+    The data is divided in x and y terms by taking label as y and any of the feature as x.here i use perimeter mean in the training of linear model.here previously we have single degree data but now in this segment we increase degree to 3
     """
     xpoly2,xpoly2_train,xpoly2_test,ypoly2_train,ypoly2_test = polynomial_data_creation_and_train_test_split(x,y,degree=3,test_size=0.3)
     #======================================================================
@@ -201,8 +190,7 @@ def main():
     #======================================================================
     #Creating Linear Model and Fitting of Model
     """
-    Linear Model created here is by using the linearmodel function of the SKLEARN Library. The model is actual Linear Regression model 
-    which is use data for fittin/training.
+    Linear Model created here is by using the linearmodel function of the SKLEARN Library. The model is actual Linear Regression model which is use data for fittin/training.
     The model created is fitted over the training data to get a result/prediction.
     """
     #Simle Linear Regression or Polynomial Linear Regression with degree 1
@@ -221,8 +209,7 @@ def main():
     #======================================================================
     #Ploting the graph of Linear Regression
     """
-    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line 
-    represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
+    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
     """
     plotter(x,y,x_test=x_test,x_poly=x_test,color='blue',linreg=linreg,label="Linear Regression")
     #======================================================================
@@ -230,8 +217,7 @@ def main():
     #======================================================================
     #Ploting the graph of Polynomial Linear Regression (degree = 2)
     """
-    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line 
-    represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
+    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
     """
     plotter(x,y,x_test=x,x_poly=xpoly,color='cyan',linreg=linreg2,label="Polynomial Regression (Degree = 2)")
     #======================================================================
@@ -239,8 +225,7 @@ def main():
     #======================================================================
     #Ploting the graph of Polynomial Linear Regression (degree = 3)
     """
-    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line 
-    represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
+    Ploting the curve over the train weights from the model and the testing data to see or check our prediction. The data above the line represents Cancer to be Malignent(i.e. 1 or 'M') and  the data below the line represents Benigen(i.e. 0 or 'B').
     """
     plotter(x,y,x_test=x,x_poly=xpoly2,color='green',linreg=linreg3,label="Polynomial Regression (Degree = 3)")
     #======================================================================
@@ -250,8 +235,7 @@ def main():
     """
     Predicting the output and plotting predicted output with actual output (which should be close to x=y line)
     """
-    print('Prediction from:\nLinear Model:',linreg.predict(x_test),'\nPolynomial Model (Degree=2):',linreg2.predict(xpoly_test),
-          '\nPolynomial Model (Degree=3):',linreg3.predict(xpoly2_test))
+    print('Prediction from:\nLinear Model:',linreg.predict(x_test),'\nPolynomial Model (Degree=2):',linreg2.predict(xpoly_test),'\nPolynomial Model (Degree=3):',linreg3.predict(xpoly2_test))
     #======================================================================
 
     #======================================================================
