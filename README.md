@@ -19,7 +19,7 @@ logistic_Regression[https://github.com/anubhavsharma430/Classical-Machine-Learni
 We use logistic regression for the binary classification of data-points. We perform categorical classification such that an output belongs to either of the two classes (1 or 0). For example – we can predict whether it will rain today or not, based on the current weather conditions.<br>
 Two of the important parts of logistic regression are Hypothesis and Sigmoid Curve. With the help of this hypothesis, we can derive the likelihood of the event. The data generated from this hypothesis can fit into the log function that creates an S-shaped curve known as “sigmoid”. Using this log function, we can further predict the category of class.<br>
 These are of two type :-<br>
-(1) Bi-Class Logistic Classification
+(1) Bi-Class Logistic Classification <br>
 (2) Multi-Class Logistic Classification
 
 ##### Bi-Class Logistic Classification
@@ -61,15 +61,15 @@ Here, m is the slope and c is the intercept.<br>
 Based on this equation, we can calculate the output that will be through the relationship exhibited between the dependent and the independent variable.
 top machine learning algorithm<br>
 These are of three type :-<br>
-(1) Simple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Simple%20Linear%20Regression]
-(2) Multiple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Multiple%20Linear%20regression]
+(1) Simple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Simple%20Linear%20Regression]<br>
+(2) Multiple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Multiple%20Linear%20regression]<br>
 (3) Polynimial Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Polynomial%20Linear%20Regression]
 
 #### Decision Tree Regression
 A decision tree is a flowchart-like structure in which each internal node represents a test on a feature (e.g. whether a coin flip comes up heads or tails) , each leaf node represents a class label (decision taken after computing all features) and branches represent conjunctions of features that lead to those class labels. The paths from root to leaf represent classification rules.<br>
 Decision trees are constructed via an algorithmic approach that identifies ways to split a data set based on different conditions. It is one of the most widely used and practical methods for supervised learning. Decision Trees are a non-parametric supervised learning method used for both classification and regression tasks.<br>
 Tree models where the target variable can take a discrete set of values are called classification trees. Decision trees where the target variable can take continuous values (typically real numbers) are called regression trees. Classification And Regression Tree (CART) is general term for this.<br>
-(1) Decision Tree Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Decision%20Tree%20Regression]
+(1) Decision Tree Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Decision%20Tree%20Regression]<br>
 (2) Random Forest Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Random_Forest_Regression]
 
 #### Support Vector Regression
