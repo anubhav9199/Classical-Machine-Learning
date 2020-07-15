@@ -1,5 +1,5 @@
 # Classical Machine Learning
-Classical_Machine_learning_Repository[https://github.com/anubhavsharma430/Classical-Machine-Learning] <br>
+[Classical_Machine_learning_Repository](https://github.com/anubhavsharma430/Classical-Machine-Learning) <br>
 The Repository contains all the model of which is use in the Classical Machine Learning. The Repo Contain file both version of notebook file and python script file and each file contains code in both scratch code form and Libraries use form. These file contains all code in moduler basis having a vision of the use of the functions in other projects and also for better understanding of the code.<br>
 
 ### The Notebook File
@@ -15,7 +15,7 @@ Classification is one of the most important aspects of supervised learning. In t
 Decision Tree algorithms are used for both predictions as well as classification in machine learning. Using the decision tree with a given set of inputs, one can map the various outcomes that are a result of the consequences or decisions.
 
 #### Logistic Regression
-logistic_Regression[https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression]<br>
+[logistic_Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression)<br>
 We use logistic regression for the binary classification of data-points. We perform categorical classification such that an output belongs to either of the two classes (1 or 0). For example – we can predict whether it will rain today or not, based on the current weather conditions.<br>
 Two of the important parts of logistic regression are Hypothesis and Sigmoid Curve. With the help of this hypothesis, we can derive the likelihood of the event. The data generated from this hypothesis can fit into the log function that creates an S-shaped curve known as “sigmoid”. Using this log function, we can further predict the category of class.<br>
 These are of two type :-<br>
@@ -23,14 +23,14 @@ These are of two type :-<br>
 (2) Multi-Class Logistic Classification
 
 ##### Bi-Class Logistic Classification
-Bi_class_classifier[https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression/Bi%20Class%20Classification]<br>
+[Bi_class_classifier](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression/Bi%20Class%20Classification)<br>
 Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). It is a Discriminate Learning Algorithm which means that it try to find posterior probability over classes directly without the envolvement of likelihood probabilities.<br>
 In statistics, the logistic model is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead, True/False or healthy/sick. <br>
 This can be extended to Classify several classes of events such as determining whether an image contains a cat, dog, lion, etc.
 This code contains only about how we can fit a logistic model over user given dataset and also to get a good output result out of it. The code written keeping vision of object oriented programing which means that the code is fully moduler so that to keep in mind about the use of the functions in other programs also.
 
 ##### Multi-Class Logistic Classification
-Multi_class_classifier[https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression/Multi%20Class%20Classification]<br>
+[Multi_class_classifier](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Classification/Logistic%20Regression/Multi%20Class%20Classification)<br>
 Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). It is a Discriminate Learning Algorithm which means that it try to find posterior probability over classes directly without the envolvement of likelihood probabilities.<br>
 In statistics, the logistic model is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead, True/False or healthy/sick.<br>
 This can be extended to Classify several classes of events such as determining whether an image contains a cat, dog, lion, etc.<br>
@@ -61,16 +61,16 @@ Here, m is the slope and c is the intercept.<br>
 Based on this equation, we can calculate the output that will be through the relationship exhibited between the dependent and the independent variable.
 top machine learning algorithm<br>
 These are of three type :-<br>
-(1) Simple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Simple%20Linear%20Regression]<br>
-(2) Multiple Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Multiple%20Linear%20regression]<br>
-(3) Polynimial Linear Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Polynomial%20Linear%20Regression]
+(1) [Simple Linear Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Simple%20Linear%20Regression)<br>
+(2) [Multiple Linear Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Multiple%20Linear%20regression)<br>
+(3) [Polynimial Linear Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Linear%20Regression/Polynomial%20Linear%20Regression)
 
 #### Decision Tree Regression
 A decision tree is a flowchart-like structure in which each internal node represents a test on a feature (e.g. whether a coin flip comes up heads or tails) , each leaf node represents a class label (decision taken after computing all features) and branches represent conjunctions of features that lead to those class labels. The paths from root to leaf represent classification rules.<br>
 Decision trees are constructed via an algorithmic approach that identifies ways to split a data set based on different conditions. It is one of the most widely used and practical methods for supervised learning. Decision Trees are a non-parametric supervised learning method used for both classification and regression tasks.<br>
 Tree models where the target variable can take a discrete set of values are called classification trees. Decision trees where the target variable can take continuous values (typically real numbers) are called regression trees. Classification And Regression Tree (CART) is general term for this.<br>
-(1) Decision Tree Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Decision%20Tree%20Regression]<br>
-(2) Random Forest Regression [https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Random_Forest_Regression]
+(1) [Decision Tree Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Decision%20Tree%20Regression)<br>
+(2) [Random Forest Regression](https://github.com/anubhavsharma430/Classical-Machine-Learning/tree/master/Regression/Decision%20Tree%20and%20Random%20Forest%20Regression/Random_Forest_Regression)
 
 #### Support Vector Regression
 Support Vector Regression(SVR) is quite different than other Regression models. It uses the Support Vector Machine(SVM, a classification algorithm) algorithm to predict a continuous variable. While other linear regression models try to minimize the error between the predicted and the actual value, Support Vector Regression tries to fit the best line within a predefined or threshold error value. What SVR does in this sense, it tries to classify all the prediction lines in two types, ones that pass through the error boundary( space separated by two parallel lines) and ones that don’t. Those lines which do not pass the error boundary are not considered as the difference between the predicted value and the actual value has exceeded the error threshold, 𝞮(epsilon). The lines that pass, are considered for a potential support vector to predict the value of an unknown. The following illustration will help you to grab this concept.
