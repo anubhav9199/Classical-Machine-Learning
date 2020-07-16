@@ -105,7 +105,7 @@ def main():
     
     #======================================================================
     #Data Calling
-    data=pd.read_csv('Breast_Cancer_Data.csv')
+    data=pd.read_csv('./Dataset/Breast Cancer Dataset/Breast_Cancer_Data.csv')
     #======================================================================
 
     #======================================================================
@@ -147,7 +147,7 @@ def main():
     #Ploting the graph
     """Ploting the curve over the train weights from the model and the testing data to see or check our prediction."""
     plt.scatter(y_pred,y_test,color='red')
-    plt.scatter(linreg.predict(x_train),y_train,color='blue')
+    plt.plot(linreg.predict(x_train),y_train,color='blue')
     #======================================================================
     
     #======================================================================

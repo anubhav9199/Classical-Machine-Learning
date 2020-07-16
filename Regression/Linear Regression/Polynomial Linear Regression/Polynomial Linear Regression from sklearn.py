@@ -25,7 +25,7 @@ from sklearn.model_selection import train_test_split,learning_curve
 """
 Data is call for work. The Columns are selected here is according to the BREAST CANCER DATASET from WINCONSIN Hospital Easily find on Kaggle(www.kaggle.com).
 """
-data=pd.read_csv('Breast_Cancer_Data.csv')
+data=pd.read_csv('./Dataset/Breast Cancer Dataset/Breast_Cancer_Data.csv')
 
 """
 Removing unnecessary columns from the dataset so that you won't face any trouble regarding the dataset. I use Breast Cancer Dataset to train model and predict whether the person is having cancer or not.
