@@ -124,12 +124,12 @@ def confusionMatrix(y_actual, y_predicted):
     fn = 0
     
     for i in range(len(y_actual)):
-        if y_actual[i] > 0:
+        if y_actual[i] >= 0:
             if y_actual[i] == y_predicted[i]:
                 tp = tp + 1
             else:
                 fn = fn + 1
-        if y_actual[i] < 1:
+        if y_actual[i] <= 1:
             if y_actual[i] == y_predicted[i]:
                 tn = tn + 1
             else:
